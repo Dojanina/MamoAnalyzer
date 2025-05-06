@@ -1,0 +1,8 @@
+flask
+tensorflow
+pillow
+numpy
+pip freeze > requirements.txt
+flask-cors
+scikit-learn
+joblib

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Create an Account</h2>
+    <form id="registerForm">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="text" name="confirmUsername" placeholder="Confirm Username" required>
+
+      <input type="email" name="email" placeholder="Email" required>
+
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+
+      <button type="submit">Register</button>
+      <div id="registerMsg" class="form-msg"></div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
