@@ -1,8 +1,8 @@
-flask
+Flask
+Flask-Cors
 tensorflow
-pillow
 numpy
-pip freeze > requirements.txt
-flask-cors
+pillow
 scikit-learn
 joblib
+opencv-python
