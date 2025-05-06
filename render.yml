@@ -3,7 +3,7 @@ services:
     name: mamoanalyzer
     env: python
     plan: free
-    buildCommand: pip install -r backend/requirements.txt
+    buildCommand: cd backend && pip install -r requirements.txt
     startCommand: python backend/app.py
     envVars:
       - key: PORT
