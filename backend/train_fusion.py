@@ -78,7 +78,7 @@ for cls in CLASSES:
         base, ext = os.path.splitext(fname)
         mask_path = os.path.join(raw_dir, f"{base}_mask{ext}")
         if not os.path.exists(mask_path):
-            print(f"⚠️ Missing mask for {fname}, skipping.")
+            print(f"Missing mask for {fname}, skipping.")
             continue
         rad_dict[fname] = extract_radiomic_features(img_path, mask_path)
 
