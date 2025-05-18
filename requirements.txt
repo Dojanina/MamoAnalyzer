@@ -1,9 +1,0 @@
-Flask
-Flask-Cors
-tensorflow
-numpy
-pillow
-scikit-learn
-joblib
-opencv-python
-scikit-image
