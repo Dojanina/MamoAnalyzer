@@ -21,10 +21,17 @@ jobs:
         working-directory: backend
         run: pip install -r requirements.txt
 
-      - name: Archive backend directory
-        run: |
-          cd backend
-          zip -r ../backend.zip .
+      
+      - name: Archive backend contents + requirements
+     run: |
+       mkdir tmp-backend
+       cp -R backend/* tmp-backend/
+       cp requirements.txt tmp-backend/
+       cd tmp-backend
+       zip -r ../backend.zip .
+       cd ..
+       rm -rf tmp-backend
+          
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
