@@ -1,17 +1,15 @@
 __pycache__/
 *.pyc
 .env
-*.h5
 *.gz
 *.db
 tmp/
 node_modules/
 .DS_Store
-!backend/models/best_fusion.h5
-# Credentials and build artifacts
+
 azure-credentials.json
 backend.zip
 app.zip
 /backend/.azure/
 /backend/.github/
-/backend/models/
+
